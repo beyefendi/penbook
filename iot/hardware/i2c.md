@@ -79,6 +79,8 @@ nav_order: 2
 
 * Adapter (Attify Badge) pin layout
 
+     Pins | Function  
+  --------|--------
   D0  | SCK Serial Clock
   D1  | SDA* Serial Data
   D2  | SDA* Serial Data
@@ -103,6 +105,8 @@ nav_order: 2
 * Use the i2ceeprom.py script
 * Need to modify parameters (size and speed) before start
 
+     Code | Function  
+  --------|--------
   `eeprom.Start()`  | to start the I2C clock
   `Start`  | initialize the EEPROM
   `eeprom.Write(RCMD)`  | set EEPROM to Read mode
