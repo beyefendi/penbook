@@ -74,6 +74,8 @@ nav_order: 1
 
 ## 3. Tools
 
+Tool | Function
+---|---
 OS	| Ubuntu as primary OS (not VM) recommended
 GNURadio| digital and analog signal processing C++ library
 GQRX	| based on GNURadio library provides analysis of frequency spectrums in a GUI
