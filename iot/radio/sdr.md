@@ -21,6 +21,8 @@ nav_order: 1
 
 * Logic
 
+  operation | function
+  ---|---
   transmitter	| Wi-Fi router
   modulate	| data is modulated by the router with a carrier signal (of 2.4 GHz)
   transmit	| Wi-Fi router passes the final signal to air via antenna
