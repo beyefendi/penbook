@@ -157,6 +157,8 @@ nav_order: 4
 
 * Adapter (Attify Badge) pin layout
 
+  Pin | Function
+  ---|---
   D0  | TCK Test Clock
   D1  | TDI Test Data In
   D2  | TDO Test Data Out
