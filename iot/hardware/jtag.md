@@ -104,6 +104,8 @@ nav_order: 4
 * Open the device
 * Identify the JTAG pads on the PCB
 
+  Pad  | Function
+  -----|------
   TCK  | Test Clock
   TDI  | Test Data In
   TDO  | Test Data Out
