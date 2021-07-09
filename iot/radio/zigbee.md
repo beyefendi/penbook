@@ -15,6 +15,8 @@ nav_order: 2
 
 * Stack
 
+  Layer | Protocol
+  ---|---
   Application layer	| Customer application
   Application profile	| ZigBee
   Application framework	| ZigBee
@@ -134,3 +136,7 @@ nav_order: 2
   * run Attify ZigBee Framework
   * set channel ID, delay (to 0.4), pcap file location,  number of packets to replay
   * observe that device will function without user interaction
+
+* TODO
+  * XBee explorer
+  * PAN ID  
