@@ -54,7 +54,7 @@ nav_order: 1
   * USB-TTL (or)
   * BusPriate (or)
   * Attify Badge
-  * baudrate.py
+* baudrate.py
 * Communication
   * minicom (or)
   * screen (or)
@@ -145,7 +145,7 @@ nav_order: 1
 * **Interacting with console**
   * screen < mount point > < baud rate >
   
-  `screen /dev/ttyUSB0 38400`
+    `screen /dev/ttyUSB0 38400`
   
   * reboot the device
   * access debug logs of the device booting up process
