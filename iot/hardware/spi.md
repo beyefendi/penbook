@@ -40,7 +40,7 @@ nav_order: 3
   * USB-TTL (or)
   * BusPriate (or)
   * Attify Badge
-  * spiflash.py
+* spiflash.py
   
 ## 4. Identify the SPI Flash pinouts
 
@@ -51,6 +51,8 @@ nav_order: 3
   
 * SPI pins
 
+    SPI Pin  | Function
+    ------------|------------
     SCK  | Serial Clock
     MOSI  | Master Out Slave In
     MISO  | Master In Slave Out
@@ -87,6 +89,8 @@ nav_order: 3
 
 * Adapter (Attify Badge) pin layout
   
+    Adapter pin | Function
+    ------------|------------
     D0  | SCK Serial Clock
     D1  | MISO Master In Slave Out
     D2  | MOSI Master Out Slave In
