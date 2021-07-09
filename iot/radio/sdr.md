@@ -21,7 +21,7 @@ nav_order: 1
 
 * Logic
 
-  operation | function
+  Operation | Function
   ---|---
   transmitter	| Wi-Fi router
   modulate	| data is modulated by the router with a carrier signal (of 2.4 GHz)
@@ -46,6 +46,8 @@ nav_order: 1
 
 * Modulation types
 
+  Modulation type | Implementation
+  ---|---
   Analog Modulation	| Amplitude, Frequency, SSB, and DSB modulation
   Digital Modulation	| ASK, FSK, PSK ,and QAM
 
@@ -84,6 +86,8 @@ HackRF	| open-source hardware allows to analyze radio and to transmit data
 Installation | apt install gqrx gnuradio rtl-sdr hackrf
 Alternative installation | https://github.com/csete/gqrx<br>https://wiki.gnuradio.org/index.php/InstallingGRFromSource<br>https://osmocom.org/projects/sdr/wiki/rtl-sdr<br>https://github.com/mossmann/hackrf/wiki/OperatingSystem-Tips#installing-hackrf-tools-manually
 
+Adapter | Range
+---|---
 RTL-SDR	| 500kHz - 1766 MHz
 HackRF		| 1 MHz - 6 GHz
 LimeSDR	| 100 kHz to 3.8 GHz
@@ -124,7 +128,7 @@ Wi-Fi & BLE	| 2.4 GHz
 * Active scan
   * connect hardware (i.e. RTL-SDR) to analysis computer
 
-  `lsusb`
+    `lsusb`
 
   * run gqrx
     * select device (i.e. RTL-SDR or any hardware under test)
@@ -176,15 +180,15 @@ Wi-Fi & BLE	| 2.4 GHz
 * Method 2: Hack RF
   * connect it to analysis computer
 
-  `hackrf_info`
+    `hackrf_info`
 
   * store packet captures (sample rate, frequency, capture file)
 
-  `hackrf_transfer –s 5 –f 433920000 –r radio.dump`
+    `hackrf_transfer –s 5 –f 433920000 –r radio.dump`
 
   * replay (sample rate, frequency, capture file)
 
-  `hackrf_transfer –s 5 –f 433920000 –t radio.dump`
+    `hackrf_transfer –s 5 –f 433920000 –t radio.dump`
 
 ## 8. Decode data
 
