@@ -39,6 +39,8 @@ nav_order: 3
 * Service
   * Structure
 
+    Value | Function
+    ---|---
     attr handle	| (first handle id for the service)
     end grp handle	| (last handle id for the service)
     uuid 		| (first 8-digit from left hand side specifies service name)
@@ -145,13 +147,15 @@ nav_order: 3
   * download and install ubertooth utility
   * sniff traffic
 
-  `ubertooth-btle -f -t <target device BD_ADDR>`
+    `ubertooth-btle -f -t <target device BD_ADDR>`
   * sniff traffic and dump into a pcap file
 
-  `ubertooth-btle -f -t <target device BD_ADDR> - c ble-dump.pcap`
+    `ubertooth-btle -f -t <target device BD_ADDR> - c ble-dump.pcap`
 
   * Relevant data
 
+  Value | Function
+  ---|---
   Access address (AA)	| used to manage link layer
   Channel Index		| dedicated advertising channel
   Packet PDU Type	| ADV_IND ADV_DIRECT_IND ADV_NONCONN_IND ADV_SCAN_IND SCAN_REQ SCAN_RSP CONNECT_REQ
@@ -160,6 +164,8 @@ nav_order: 3
 
   * Advertising PDUs
 
+  Value | Function
+  ---|---
   ADV_IND	| Connectable Undirected Advertising
   ADV_DIRECT_IND	| Connectable Directed Advertising
   ADV_NONCONN_IND | Non-Connectable Undirected Advertising
@@ -167,11 +173,15 @@ nav_order: 3
 
   * Scanning PDUs
 
+  Value | Function
+  ---|---
   SCAN_REQ 	| Scan request from the mobile app
   SCAN_RSP	| Scan response from the target device
 
   * Initiating PDUs
 
+  Value | Function
+  ---|---
   CONNECT_REQ	| Connection request
 
   * Wireshark
