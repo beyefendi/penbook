@@ -285,3 +285,4 @@ nav_order: 3
 ## 11. References
 
 - https://www.refirmlabs.com/binwalk/
+- https://www.nozominetworks.com/blog/extract-firmware-from-ot-devices-for-vulnerability-research/
