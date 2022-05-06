@@ -1,4 +1,4 @@
-# Information gathering
+# Information gathering & Enumeration
 
 - We have 7 attack surfaces
 
