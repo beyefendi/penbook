@@ -38,9 +38,60 @@
 
 ![](images/threat-model-1.png)
 
+### Identify threats and categorize
+
+#### 1. Authentication - Weak credentials
+
+- The GUI authenticates users with four-digit PINs that can be predicted. 
+- **Impact:** If attackers bypass authentication, they can send commands to the infusion pump on behalf of the accounts’ owners.
+- **Category:** Spoofing
+- **Pre-requisite:**
+
+#### 2. Authentication - Improper account lockout
+
+- The GUI locks a user out after five consecutive failed login attempts.
+- Although it is supposed to be a brute-force protection mechanism, it can cause not to log into the system for a specified period. 
+- Since the system works with a single user account, it blocks all users. 
+- **Impact:** It might block access to the system and violate the patient safety requirement. Need to find the balance between security, safety, and usability.
+- **Category:** Denial of service
+- **Pre-requisite:**
+
+#### 3. Authentication - Weak mechanism
+
+- The GUI logs user actions; however, it supports only a single user account for the nurses. 
+- **Impact:** It is impossible to distinguish users between them and identify actual users of a specific operation.
+- **Category:** Repudiation
+- **Pre-requisite:**
+
+#### 4. Supply chain attack
+
+- Critical medical systems frequently have remote support solutions that allow the vendor’s technicians to access the software instantly. 
+- Even if remote connection also requires authentication, the credentials might be publicly available or be the default.
+- **Impact:** As technician accounts are more privileged on the device, it can be misused to escalate privileges.
+- **Category:** Privilege escalation
+- **Pre-requisite:**
+
+#### 5. Error messages
+
+- When presented to the user, certain debugging messages or errors might reveal important information about the patients or system internals. 
+- Commonly, such devices usually run outdated utilities, so such services are prone to vulnerabilities. 
+- **Impact:** Adversaries might be able to decode these messages, identify the underlying technologies, and figure out ways to exploit them.
+- **Category:** Information disclosure
+- **Pre-requisite:**
+
+#### 6. Physical tampering
+
+- Although the GUI is designed to allow limited inputs, it could get input through an external keyboard.
+- Even if most of the keyboard keys have been disabled, the system might still allow key combinations, such as shortcuts, hotkeys, or even accessibility features configured by the OS (closing a window by pressing ALT-F4 on Windows or CTRL-TAB for switching apps). 
+- **Impact:** These could allow attackers to bypass the GUI and exit the kiosk app that exposes another attack surface firmware.
+- **Category:** Tampering
+- **Pre-requisite:**
+
 ## 2.2 Vulnerability analysis
 
 - No vulnerability data
+
+### Attack paths
 
 ## 2.3 Risk scoring
 
@@ -65,13 +116,14 @@
 
 ---
 
-# Threats
+# Threats summary
 
 #### 1. Authentication - Weak credentials
 
 - The GUI authenticates users with four-digit PINs that can be predicted. 
 - **Impact:** If attackers bypass authentication, they can send commands to the infusion pump on behalf of the accounts’ owners.
 - **Category:** Spoofing
+- **Pre-requisite:** 
 - **Risk score:**
   - Impact: Authentication bypass (2)
   - Coverage: One attack affecting all users (3)
@@ -86,6 +138,7 @@
 - Since the system works with a single user account, it blocks all users. 
 - **Impact:** It might block access to the system and violate the patient safety requirement. Need to find the balance between security, safety, and usability.
 - **Category:** Denial of service
+- **Pre-requisite:** 
 - **Risk score:**
   - Impact: Denial of service (1)
   - Coverage: One attack affecting all users (3)
@@ -98,6 +151,7 @@
 - The GUI logs user actions; however, it supports only a single user account for the nurses. 
 - **Impact:** It is impossible to distinguish users between them and identify actual users of a specific operation.
 - **Category:** Repudiation
+- **Pre-requisite:** 
 - **Risk score:** 
   - Impact: Repudiation (1)
   - Coverage: One user/system user (1)
@@ -111,6 +165,7 @@
 - Even if remote connection also requires authentication, the credentials might be publicly available or be the default.
 - **Impact:** As technician accounts are more privileged on the device, it can be misused to escalate privileges.
 - **Category:** Privilege escalation
+- **Pre-requisite:** 
 - **Risk score:**
   - Impact: Privilege escalation (2)
   - Coverage: One user/system user (2)
@@ -124,6 +179,7 @@
 - Commonly, such devices usually run outdated utilities, so such services are prone to vulnerabilities. 
 - **Impact:** Adversaries might be able to decode these messages, identify the underlying technologies, and figure out ways to exploit them.
 - **Category:** Information disclosure
+- **Pre-requisite:** 
 - **Risk score:** 
   - Impact: Sensitive data disclosure (1)
   - Coverage: No user (1)
@@ -137,6 +193,7 @@
 - Even if most of the keyboard keys have been disabled, the system might still allow key combinations, such as shortcuts, hotkeys, or even accessibility features configured by the OS (closing a window by pressing ALT-F4 on Windows or CTRL-TAB for switching apps). 
 - **Impact:** These could allow attackers to bypass the GUI and exit the kiosk app that exposes another attack surface firmware.
 - **Category:** Tampering
+- **Pre-requisite:** 
 - - **Risk score:** 
   - Impact: Tampering (2)
   - Coverage: No user (1)
