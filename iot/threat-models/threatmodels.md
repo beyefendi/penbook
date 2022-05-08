@@ -1,33 +1,58 @@
-# Threat modeling template
+# Stage 1: Planning
 
-## Attack surface: Web application (GUI) 
+## 1.1 Scoping
 
-### Information gathering
+- Web attack surface
+- White-box
+- In lab environment
 
-#### **Interaction:**
+## 1.2 Information gathering
+
+### **Interaction:**
 
 - The `control server` is designed for the `medical team (nurses)` to operate the `infusion pump` remotely.
 - The `kiosk app` contains a graphical user interface (GUI) that is the front-end of the control server service.
 - The service sends commands to the infusion pumps that are transmitted through an `encrypted protocol`.
 
-#### **Functionalties:**
+### **Functionalties:**
 
 - The kiosk is not designed to use the device’s OS as a standard OS user but only the GUI app from the touch screen.
 - `Vendor techicians'` can access the wole device remotly for maintanence purposes.
 - GUI app has very limited interactions with the underlying OS, and the input capability is fairly restricted. 
 - `Patients` are not supposed to be a user of the infusion pump due to safety reasons. 
-  ![](images/threat-model-1.png)
+
+## 1.3 Enumeration
+
+- Web port: 8888/TCP
+- No banner
+- No version information
+- No crawling
 
 ---
 
-### Risk scoring
+# Stage 2: Threat modeling (template)
+
+## 2.1 Attack surface mapping
+
+- Attack surface: Web application (GUI) 
+
+![](images/threat-model-1.png)
+
+## 2.2 Vulnerability analysis
+
+- No vulnerability data
+
+## 2.3 Risk scoring
+
+
+### Formulation
 
 - Risk score = (Impact + Coverage + Simpilicity*3) / 5
 - Risk score > 2.5 -> Severity = High
 - Risk score < 2 -> Severity = Low
 - Otherwise -> Severity = Medium
 
-#### Defult impcat values
+### Defult impcat values
 
 - Remote code execution = 3
 - Authentication bypass = 2
@@ -40,7 +65,7 @@
 
 ---
 
-### Threats
+# Threats
 
 #### 1. Authentication - Weak credentials
 
