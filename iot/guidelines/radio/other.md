@@ -1,0 +1,1 @@
+- [Penetration testing wireless keyboards: Are your devices vulnerable?](https://kth.diva-portal.org/smash/get/diva2:1701492/FULLTEXT01.pdf)
