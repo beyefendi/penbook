@@ -16,8 +16,8 @@ Hardware testing commonly entails taking photographs of the components on the PC
 The official technical specifications are carefully interpreted, including user and developer manuals.
 The processor datasheet usually contains information about interfaces, I/O ports, interrupts, and more.
 Moreover, documentation that is publicly available (i.e., on fccid.io) is explored to reveal incomplete information (e.g., chip pin-outs).
-An additional search can be executed on repositories of available datasheets [www.alldatasheet.com](https://www.alldatasheet.com), [www.datasheets360.com](https://www.datasheets360.com) for specifications that are missing from the manufacturer's website.
-Moreover, the logo can be searched online for modules that do not contain a model number [www.westfloridacomponents.com/manufacturer-logos.html](https://www.westfloridacomponents.com/manufacturer-logos.html).
+An additional search can be executed on repositories of available datasheets ([www.alldatasheet.com](https://www.alldatasheet.com), [www.datasheets360.com](https://www.datasheets360.com)) for specifications that are missing from the manufacturer's website.
+Moreover, the logo can be searched online for modules that do not contain a model number ([www.westfloridacomponents.com/manufacturer-logos.html](https://www.westfloridacomponents.com/manufacturer-logos.html)).
 
 Finally, to derive use case diagrams, the relevant information is summarized, including what each device does and the way in which it operates, how devices communicate with each other, how the input and output of the device work, and the functionality of the buttons and external interfaces.
 
