@@ -95,7 +95,8 @@
 
 ## 2.3 Risk scoring
 
-
+- [OWASP-Calculator](https://javierolmedo.github.io/OWASP-Calculator/)
+  
 ### Formulation
 
 - Risk score = (Impact + Coverage + Simpilicity*3) / 5
